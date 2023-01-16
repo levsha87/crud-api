@@ -9,7 +9,6 @@ export function getRequestData(req:http.IncomingMessage):Promise<string> {
             });
 
             req.on('end', () => {
-                console.log(body);
                 resolve(body);
             });
 
